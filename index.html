@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon"href="%PUBLIC_URL%/favico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <meta
+      name="description"
+      content="Web site created using create-react-app"
+    /> -->
+    
+    
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>HostelStay</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <style>
+     
+      .slider {
+        width:100%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        opacity:0.7 ;
+    
+      }
+      
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .slide {
+        
+       flex: 0 0 auto;
+        height: 15em;
+        position: relative;
+        bottom: 2em;
+        left: 19em;
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+      }
+      
+      .btn {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        outline: none;
+      }
+     
+    
+  .contain {
+    width: 1210px;
+    margin: auto;
+    padding: 20px;
+    height:400px;
+    
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(178px, 0.4fr));
+    grid-gap: 20px;
+    
+  }
+
+  .service {
+    background-color: #f7af14;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .service h3 {
+    color: #333;
+    margin-top: 0;
+  }
+
+  .service p {
+    color: #666;
+  }
+
+  .service img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }      
+  aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    position:relative ;
+    bottom: 33px;
+    float: right;
+    
+  }
+  textarea{
+    padding: 3px;
+    
+  }
+  .qe{
+    margin-left: 20px;
+  }
+  footer{
+    position: relative;
+    top: 10em; 
+    padding-top: 3em; 
+    background-color:transparent;
+}
+  
+
+  .io{
+    position: relative;
+    bottom: 70px;
+    right: 5px;
+  }
+  html,body{
+    color: whitesmoke;
+    background-color:black;
+    padding: 0;
+    margin: 0;
+  }
+  /* (A) BACKGROUND */
+
+.aq{
+
+  position: relative;
+  background-color:white ;
+  height: fit-content;
+  color: black;
+
+
+
+}
+
+
+.fh{
+  padding-left: 6em;
+  position: relative;
+  top: 23px;
+}
+#contact{
+  position: relative;
+top: 3em;
+}
+
+.qra{
+  position: relative;
+  bottom: 1em;
+}
+.fa{
+  padding-left: 15px;
+  
+}
+#issue{
+  width: 14em;
+}
+
+#slideshow-container {
+  width: 80%;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+  margin: auto;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.scroll {
+  display: inline-block;
+  width: 50%;
+}
+
+.scroll img {
+  width: 50%;
+  
+}
+
+
+.control-btn {
+  position: absolute;
+  top:125em;
+  transform: translateY(-50%);
+ background-color: black;  
+  color:rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prev-btn {
+  left: 46px;
+}
+
+#next-btn {
+  right: 46px;
+}
+</style>
+    </head>
+    <body><br>
+      
+    <div class="slider"id="about">
+      <h2 style="color: #f7af14;"><em>ABOUT</em>  US</h2>
+      <div class="slides">
+        <div class="slide" ><br>
+          <br><p class="qw"align="center"><em><h2 align="center">Welcome to StudentStay Hostel</h2></em>
+          <br>
+          <div class="er"align="center"><h4> 
+           At StudentStay, we understand the unique needs and challenges of student life. 
+          Our hostel is designed to provide comfortable and affordable accommodation for students, 
+          offering a supportive environment<br> where you can thrive academically and socially.</h4> </div></p></div>
+        <div class="slide"><br><br>
+          <p class="qw"align="center"><em><h2 align="center">A Home away from home</h2></em>
+          <br>
+          <div class="er"align="center"><h4> 
+            Located in the heart of the city, StudentStay Hostel offers a safe and welcoming environment for students from all walks of life. 
+            Whether you're a first-year student exploring campus life or an international student embarking on a 
+            new adventure, 
+            our hostel is your home away from home.
+          </h4> </div></p></div>
+        <div class="slide"><br><br>
+          <p class="qw"align="center"><em><h2 align="center">Community and Connection</h2></em>
+          <br>
+          <div class="er"align="center"><h4> 
+            At StudentStay, we believe in the power of community. Our hostel provides ample opportunities
+            for students to connect, collaborate, and build lasting friendships. Whether you're studying in the
+             common area, participating in a group activity, or attending a hostel event,
+            you'll always find a supportive community of like-minded individuals.
+          </h4> </div></p></div>
+        <div class="slide"><br><br>
+          <p class="qw"align="center"><em><h2 align="center">Safety and Security</h2></em>
+          <br>
+          <div class="er"align="center"><h4> 
+            The safety and security of our guests are our top priorities. Our hostel is equipped with 24/7 security<br> 
+            surveillance, secure key card access, and on-site staff to ensure a safe and comfortable environment for 
+            all residents. <br>
+            You can rest easy knowing that your safety is our utmost concern.
+          </h4> </div></p></div>
+      </div>
+    
+    </div>
+    
+<div class="contain"id="services">
+  <h2 align="center"style="color:#f7af14">Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <img src="ssaa.jpg" alt="WiFi"height="200px">
+      <h3>Free WiFi</h3>
+      <p>Stay connected with our high-speed internet access throughout the hostel.</p>
+    </div>
+    <div class="service">
+      <img src="OIP.jpeg" alt="Laundry"height="200px">
+      <h3>Laundry Facilities</h3>
+      <p>Convenient on-site laundry facilities available for all guests.</p>
+    </div>
+    <div class="service">
+      <img src="R.jpg" alt="Kitchen"height="200px">
+      <h3>Delicious Food</h3>
+      <p>Served variety of tasty and hygienic food to the students</p>
+    </div>
+    <div class="service">
+      <img src="loc.jpeg" alt="Lockers"height="200px"width="300px">
+      <h3>Secure Lockers</h3>
+      <p>Keep your belongings safe with our secure locker storage facilities.</p>
+    </div>
+    
+  </div>
+</div><br><br><br>
+    <script>
+      
+              var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 5000); // Change slide every 2 seconds
+  }
+  
+</script>
+  </div>
+  <div>      <h2 class="we"align="center"style="color:#f7af14"><em>Image Gallery</em></h2>
+      <div class="ar">  
+      <!-- <table class="wr" >
+        <tr><img src="slider1.jpg"height="250px"width="320px"class="fh"></tr>
+        <tr><img src="ho.jpeg"height="250px"width="320px"class="fh"></tr>
+        <tr><img src="hostel.jpeg"height="250px"width="320px"class="fh"></tr>
+        <tr><img src="kl.jpeg"height="250px"width="320px"class="fh"></tr>
+      </table> -->
+      <div id="slideshow-container">
+        <div class="scroll"><img src="slider1.jpg"height="250px"width="400px" alt="Image 1"><img src="hostel.jpeg"height="250px"width="400px" alt="Image 2"></div>
+        <div class="scroll"><img src="iop.jpeg"height="250px"width="400px" alt="Image 2"><img src="qr.jpeg"height="250px"width="380px" alt="Image 3"></div>
+        <div class="scroll"><img src="rq (1).jpeg"height="250px"width="400px" alt="Image 3"><img src="qwe.jpeg"height="250px"width="400px" alt="Image 1"></div>
+        <div class="scroll"><img src="opl.jpeg"height="250px"width="400px" alt="Image 3"><img src="tre.jpeg"height="250px"width="400px" alt="Image 3"></div>
+        <div class="scroll"><img src="rq (4).jpeg"height="250px"width="400px" alt="Image 3"><img src="rq (2).jpeg"height="250px"width="400px" alt="Image 3"></div>
+        <div class="scroll"><img src="ho.jpeg"height="250px"width="400px" alt="Image 3"><img src="rq (5).jpeg"height="250px"width="400px" alt="Image 3"></div>
+        <div class="scroll"><img src="rq (3).jpeg"height="250px"width="400px" alt="Image 3"><img src="rq (6).jpeg"height="250px"width="400px" alt="Image 3"></div>
+        
+      </div>
+
+
+      
+      <button class="control-btn" id="prev-btn" onclick="scrollToLeft()"><i class="fa  fa-arrow-left  fa-lg" aria-hidden="true"></i></button>
+      <button class="control-btn" id="next-btn" onclick="scrollToRight()"><i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></button>
+      
+    </div>
+        
+    </div>
+    <script>
+      function scrollToLeft() {
+        document.getElementById('slideshow-container').scrollBy({
+          left: -window.innerWidth, // Scroll one viewport width to the left
+          behavior: 'smooth' // Smooth scrolling
+        });
+      }
+    
+      function scrollToRight() {
+        document.getElementById('slideshow-container').scrollBy({
+          left: window.innerWidth, // Scroll one viewport width to the right
+          behavior: 'smooth' // Smooth scrolling
+        });
+      }
+    </script>
+    
+    <footer id="contact"><br><br>
+      
+      <div class="io">
+        <h2 align="center"class="qra"style="color:#f7af14"><em>Contact Us</em></h2>
+        <aside>
+           Please Fill up the Form Below for more Enquiry<br><br>
+           <form id="myForm"action="https://api.web3forms.com/submit"method="POST"align="center">
+            <input type="hidden" name="access_key" value="55f1749b-7086-4bf6-a862-d8f14a6f7c75">
+        
+          <input type="text"placeholder="Name"id="name"name="name"Required><br><br>
+          <input type="text"placeholder="Number"id="number"name="number"Required><br><br>
+          <input type="text"placeholder="Email"id="email"name="email"Required ><br><br>
+          
+          <textarea placeholder="Write your issue"style="height:5em"id="issue"name="issue"Required></textarea><br>
+          
+          <br>
+         <button type="Submit"class="aq" onclick="dbox('Query Submitted')"style="padding:1em 1em 1em 1em">Submit
+        </form>
+        
+        <!-- (A) HTML DIALOG BOX -->
+ 
+
+<script>
+  function dbox (msg) {
+    if (msg != undefined) {
+      document.getElementById("boxTxt").innerHTML = msg;
+      document.getElementById("boxBack").classList.add("show");
+    } else { document.getElementById("boxBack").classList.remove("show"); }
+  }
+</script>
+        </aside>
+        <div class="qe">
+          <h3>Address</h3><br>
+          <h5><Address>General Section,MBM university,<br>near Bharat Petrolpump,Ratnada,<br>Jodhpur-342001</Address></h5>
+          <br><br>
+          <h3>Now Available At</h3><br>
+        <div class="a43">
+          <a href="https://mbm.ac.in/newsroom/hostel"target="_blank"class="ade"><i class="fa fa-twitter fa-lg" aria-hidden="true"style="color:aqua"></i></i>
+          <a href="https://www.instagram.com/mbmuniversityjodhpur/"target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"style="color:pink"></i>  
+            <a href="https://www.facebook.com/M.B.M.EngineeringCollegeJodhpur/"target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"style="color:blue"></i>
+            </div>        
+            </div>
+      </div>
+      <br>
+    </footer>
+
+
+</head>
+  </body>
+</html>
